@@ -55,8 +55,8 @@ if __name__ == '__main__':
     # model = AutoModelForCausalLM.from_pretrained(args.model_path, device_map='auto')
     if args.use_api:
         llm = OpenAI(
-            api_key="sk-Bte8prbPVUtZMowI3e89D7F7A92743399fB5Bf98D509A9B7", 
-            base_url="https://aihubmix.com/v1"
+            api_key="", 
+            base_url=""
         )
         kgc = KGC(args.model_name, llm, None, encoder, args)
         kgcRefine = KGCRefine(args.model_name, llm, None, encoder, args)
